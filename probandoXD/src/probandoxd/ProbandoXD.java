@@ -5,17 +5,23 @@
  */
 package probandoxd;
 
+import java.util.Scanner;
+
 /**
  *
  * @author josue
  */
 public class ProbandoXD {
 
-    /**
-     * @param args the command line arguments
-     */
+   static Scanner read = new Scanner(System.in);
+   
     public static void main(String[] args) {
-        // TODO code application logic here
+        boolean FLAG = true;
+        while (FLAG == true) {            
+            System.out.println("1. sumar 2. restar");
+            int opcion = read.nextInt();
+            
+        }
     }
     
 }
