@@ -5,6 +5,8 @@
  */
 package probandoxd;
 
+
+
 import java.util.Scanner;
 
 /**
@@ -20,6 +22,17 @@ public class ProbandoXD {
         while (FLAG == true) {            
             System.out.println("1. sumar 2. restar");
             int opcion = read.nextInt();
+            switch(opcion){
+                case 1:
+                    System.out.println("Ingrese un nuevo numero");
+                    int num1=read.nextInt();
+                    System.out.println("Ingrese nuevo numero");
+                    int num2=read.nextInt();
+                    int suma=num2+num1;
+                    System.out.println();
+                    System.out.println(suma);
+                
+            }
             
         }
     }
