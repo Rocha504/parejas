@@ -5,8 +5,6 @@
  */
 package probandoxd;
 
-
-
 import java.util.Scanner;
 
 /**
@@ -15,36 +13,40 @@ import java.util.Scanner;
  */
 public class ProbandoXD {
 
-   static Scanner read = new Scanner(System.in);
-   
+    static Scanner read = new Scanner(System.in);
+
     public static void main(String[] args) {
         boolean FLAG = true;
-        while (FLAG == true) {            
+        while (FLAG == true) {
             System.out.println("1. sumar 2. restar");
             int opcion = read.nextInt();
-            switch(opcion){
-                case 3:{
+            switch (opcion) {
+                case 2: {
                     System.out.println("Ingrese un nuevo numero");
-                    int num1=read.nextInt();
+                    int num1 = read.nextInt();
                     System.out.println("Ingrese nuevo numero");
-                    int num2=read.nextInt();
-                    int suma=num2+num1;
+                    int num2 = read.nextInt();
+                    int suma = num2 - num1;
                     System.out.println();
-                    System.out.println(suma);}
-                    
-                case 1:{
+                    System.out.println(suma);
+                }
+                case 1: {
                     System.out.println("Ingrese un nuevo numero");
-                    int num1=read.nextInt();
+                    int num1 = read.nextInt();
                     System.out.println("Ingrese nuevo numero");
-                    int num2=read.nextInt();
-                    int suma=num2+num1;
+                    int num2 = read.nextInt();
+                    int suma = num2 + num1;
                     System.out.println();
-                    System.out.println(suma);}
-                    
-                
+                    System.out.println(suma);
+
+                    break;
+                }
+                default:
+                    System.out.println("No se puede");
+                    break;
             }
-            
+
         }
     }
-    
+
 }
